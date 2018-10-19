@@ -1,0 +1,27 @@
+{
+  "name": "upy_survey",
+  "version": "1.0.0",
+  "description": "A survery-app for the UPY",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaacupy/upy_survey.git"
+  },
+  "keywords": [
+    "Survey"
+  ],
+  "author": "Isaac Kuri, Geonel Rodriguez, Oscar Aguilar, Luis Suarez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isaacupy/upy_survey/issues"
+  },
+  "dependencies": {
+    "express": "*",
+    "node": "*",
+    "mongodb": "*"
+  },
+  "homepage": "https://github.com/isaacupy/upy_survey#readme"
+}

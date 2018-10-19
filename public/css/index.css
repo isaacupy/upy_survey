@@ -1,0 +1,12 @@
+/*Templete basico*/
+.fondo{
+  background-color: purple;
+}
+/*Template login*/
+.fcenter{
+  margin-top: 10%;
+}
+.logbox{
+  background-color: white;
+  border-radius: 5px;
+}
