@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login para 1 usuario</title>
+</head>
+
+<body>
+<SCRIPT  language=JavaScript>
+function go(){
+if (document.form.password.value=='password' && document.form.login.value=='user'){
+        document.form.submit();
+    }
+    else{
+         alert("incorrect data");
+    }
+}
+</SCRIPT>
+<FORM name=form action="TU_PAGINA_WEB.HTML">
+
+<P>student's ID:    <INPUT type=text name=login>
+<P>pasword: <INPUT type=password name=password>
+<INPUT onclick=go() type=button value=Acceder>
+
+</FORM>
+</body>
+</html>
