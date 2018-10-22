@@ -1,0 +1,17 @@
+  control [
+  {"c1709001":
+    {"user":"c1709003@upy.edu.mx",
+      "password":"1709001",
+      "name":"Viviana-Pérez"}
+    }
+  {"c1709002":
+    {"user":"c1709002@upy.edu.mx",
+     "password":"1709002",
+     "name":"Genesis-Corduvar"}
+    }
+  {"c1709003":
+    {"user":"c1709003@upy.edu.mx ",
+     "password":"1709003",
+     "name":"Eduardo-Espadas"}
+     }
+]
