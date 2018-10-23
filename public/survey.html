@@ -1,0 +1,66 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css" />
+  <!-- link rel="stylesheet" href="../public/css/index.css" -->
+  <title>Document</title>
+</head>
+<body class="fondo fcenter">
+  <div class="container" align="center">
+      <div class="col-md-8">
+        <h1 style="color:white;">Please answer the following survey</h1>
+      </div>
+      <div class="col-md-8 logbox">
+        <div><h2>Teachers Evaluation</h2></div>
+      <form>
+        <div class="form-group" align="left">
+          <label for="teacher">Select your teacher</label>
+          <select class="form-control" id="teacher">
+            <option>Javier Poot</option>
+            <option>Guillermo Cordourier</option>
+            <option>Roxana Gongora</option>
+            <option>Nora Carrillo</option>
+          </select>
+        </div>
+        <div class="form-group" align="left">
+          <label for="subject">Select the subject</label>
+          <select class="form-control" id="subject">
+            <option>Electric Drawing</option>
+            <option>Physics for Engineering</option>
+            <option>Calculus</option>
+            <option>Creativity and Cognitive Skills</option>
+          </select>
+        </div>
+        <p align="left">Is he a good teacher?</p>
+        <fieldset class="form-inline" id="goodteacher">
+          <div class="row" style="padding-left:4%">
+              <div class="form-check  mb-2 mr-sm-2">
+                <input class="form-check-input" type="radio" name="yes" id="option1" value="yes">
+                <label class="form-check-label" for="option1">
+                  Yes
+                </label>
+              </div>
+              <div class="form-check mb-2 mr-sm-2">
+                <input class="form-check-input" type="radio" name="no" id="option2" value="no">
+                <label class="form-check-label" for="option2">
+                  No
+                </label>
+              </div>
+              <div class="form-check  mb-2 mr-sm-2">
+                <input class="form-check-input" type="radio" name="no" id="option3" value="n.a">
+                <label class="form-check-label" for="option3">
+                  N.A
+                </label>
+              </div>
+          </div>
+        </fieldset>
+        <div class="form-group" align="center" style="padding-top:3%">
+          <button type="submit" class="btn-lg btn-dark btn-block">Submit</button>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

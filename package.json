@@ -21,7 +21,9 @@
   "dependencies": {
     "express": "*",
     "node": "*",
-    "mongodb": "*"
+    "mongodb": "*",
+    "body-parser": "*",
+    "mongoose": "*"
   },
   "homepage": "https://github.com/isaacupy/upy_survey#readme"
 }
