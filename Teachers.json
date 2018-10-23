@@ -1,0 +1,16 @@
+teachers[
+{
+    "javierp":
+        {"name":"Javier",
+        "surname":"Poot"},
+      "cordourier":
+        {"name":"Guillermo",
+         "surname":"Cordourier"},
+    "maryel":
+    {"name":"Maryel",
+     "surname":"Contreras"},
+    "julio":
+    {"name":"Julio",
+     "surname":"Molina"}
+}
+]

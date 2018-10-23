@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<style>
+	#error {color:Red}
+	#resultado {color:Grey}
+	</style>
+</head>
+
+<body>
+
+<h2>student 1_embedded systems_metrology_javier pot</h2>
+
+<form>
+    <div>
+
+				Did the teacher explain the silabus? <input type="radio" name="p1" value="0"> yes <input type="radio" name="p1" value="1"> No
+    </div>
+    <div>
+        Did the teacher stick to the silabus? <input type="radio" name="p2" value="0"> yes <input type="radio" name="p2" value="1"> No
+    </div>
+    <div>
+				Did the dynamics in class reflect the objectives of the subject? <input type="radio" name="p3" value="0"> yes <input type="radio" name="p3" value="1"> No
+    </div>
+    <div>
+        Did the dynamics were ? <input type="radio" name="p4" value="0"> yes <input type="radio" name="p4" value="1"> No
+    </div>
+    <div>
+				Were the dynamics useful for understanding the subject? <input type="radio" name="p5" value="0"> yes <input type="radio" name="p5" value="1"> No
+    </div>
+		<div>
+				Did the teacher use rubrics to grade assignments and projects? <input type="radio" name="p6" value="0"> yes <input type="radio" name="p6" value="1"> No
+    </div>
+    <div>
+        <div id="error"></div>
+    </div>
+    <div>
+        <p><input type="submit" value="Enviar"></p>
+    </div>
+</form>
+<div id="resultado"></div>
+
+<script>
+// Creamos el evento click del boton
+document.querySelector("input[type=submit]").addEventListener("click",enviar);
+
+// definimos el array que contendra los respuestados de la encuesta
+var resultadoEncuesta=[];
+
+// definimos la variable que contiene el numero de preguntas
+var totalPreguntas=6;
+
+// inicializamos el array de los resultados de la forma:
+// resultadoEncuesta["p1"]=[0,0]
+// resultadoEncuesta["p2"]=[0,0]
+// ...
+inicializarArrayResultados();
+
+// variable que contiene el numero de encuestas realizadas
+var totalEncuestas=0;
+
+/**
+ * Funcion que se ejecuta cada vez que se pulsa sobre el boton "enviar"
+ */
+function enviar(e) {
+
+    // obtenemos todos los radio seleccionados
+    var preguntas=document.querySelectorAll("input[type=radio]:checked");
+
+    // si estan todos seleccionados...
+    if(preguntas.length==totalPreguntas) {
+
+        totalEncuestas++;
+        document.getElementById("error").innerHTML="";
+
+        // recorremos cada una de las respuestas
+        preguntas.forEach(function(pregunta) {
+
+            // guardamos en un array bidimensional la respuesta
+            resultadoEncuesta[pregunta.name][pregunta.value]++;
+
+            // desmarcamos el check
+            pregunta.checked=false;
+        });
+        mostrarResultado();
+    }else{
+        document.getElementById("error").innerHTML="Selecciona todos los valores...";
+    }
+
+    // cancelamos el evento para que no continue
+    e.preventDefault();
+}
+
+/**
+ * Funcion para inidializar el array bidimensional
+ */
+function inicializarArrayResultados() {
+    for(var i=1;i<=totalPreguntas;i++) {
+        resultadoEncuesta["p"+i]=[0,0];
+    }
+}
+
+/**
+ * Simple funcion que muestra los resultados en cada votacion
+ */
+function mostrarResultado() {
+    resultado="";
+    resultado+="<h3>De un total de "+totalEncuestas+" encuestados...</h3>";
+    for(var i=1;i<=totalPreguntas;i++) {
+        resultado+="<div>pregunta "+i+" - Si: "+resultadoEncuesta["p"+i][0]+" No: "+resultadoEncuesta["p"+i][1]+"</div>";
+    }
+    document.getElementById("resultado").innerHTML=resultado;
+}
+</script>
+
+</body>
+</html>
