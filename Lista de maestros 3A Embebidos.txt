@@ -1,0 +1,10 @@
+
+Embedded 3A:
+Teacher:  				Subject:
+Cordurier Maruri Guillermo   ------    Physics for Engineering
+Poot Guzmán José Javier      ------    Electronic Drawing
+Salazar López Juan Carlos    ------    Research Methodology
+Molina Céspedes Julio        ------    Circuit Analysis 
+Carrillo Nora                ------    Cognitive Skills and Creativity
+Góngora Roxana               ------    Differential Calculus 
+Ramírez Victor               ------    Advanced Programing  
