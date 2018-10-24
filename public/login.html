@@ -14,14 +14,21 @@
         <h1 style="color:white;">Welcome<br>to<br>UPY Survey</h1>
       </div>
       <div class="col-md-4 logbox">
-        <div><h2>Want to login?</h2></div>
-        <form action="/login">
-            <div class="form-group" align="center" style="padding-bottom:10px;">
-              <button type="submit" class="btn-lg btn-dark btn-block">Click Here</button>
+        <div><h2>Login:</h2></div>
+        <form method="post" align="left" action="/login/user">
+            <div class="form-group">
+              <label for="user-email">Institutional Email</label>
+              <input type="email" class="form-control" id="uemail" aria-describedby="emailHelp" placeholder="Enter email" name="uemail">
+            </div>
+            <div class="form-group">
+              <label for="user-password">Password</label>
+              <input type="password" class="form-control" id="upassword" placeholder="Password" name="upassword">
+            </div>
+            <div class="form-group" align="center">
+              <button type="submit" class="btn-lg btn-dark btn-block">Submit</button>
             </div>
         </form>
       </div>
-
   </div>
 </body>
 </html>

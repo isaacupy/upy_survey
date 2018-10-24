@@ -23,7 +23,9 @@
     "node": "*",
     "mongodb": "*",
     "body-parser": "*",
-    "mongoose": "*"
+    "mongoose": "*",
+    "express-validator": "*",
+    "express-session": "*"
   },
   "homepage": "https://github.com/isaacupy/upy_survey#readme"
 }
