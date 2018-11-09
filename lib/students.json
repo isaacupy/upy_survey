@@ -1,0 +1,44 @@
+[
+  {
+    "name":"Geonel Rodriguez",
+    "id":"1709125",
+    "email":"al1709125@upy.edu.mx",
+    "password":"1709125"
+  },
+  {
+    "name":"Luis Suarez",
+    "id":"1709142",
+    "email":"al1709142@upy.edu.mx",
+    "password":"1709142"
+  },
+  {
+    "name":"Oscar Aguilar",
+    "id":"1709003",
+    "email":"al1709003@upy.edu.mx",
+    "password":"1709003"
+  },
+  {
+    "name":"Mauro",
+    "id":"1709074",
+    "email":"al1709074@upy.edu.mx",
+    "password":"1709074"
+  },
+  {
+    "name":"Yeshua",
+    "id":"1709087",
+    "email":"al1709087@upy.edu.mx",
+    "password":"1709087"
+  },
+  {
+    "name":"Bryan Ruiz",
+    "id":"1709130",
+    "email":"al1709130@upy.edu.mx",
+    "password":"1709130"
+  },
+  {
+    "name":"Isaac Kuri",
+    "id":"1709071",
+    "email":"al1709071@upy.edu.mx",
+    "password":"1709071"
+  }
+]
